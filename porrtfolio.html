@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DANDIK JOSHNA Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .profile-photo{
+      width:200px;
+      height:200px;
+      border-radius:50%;
+      object-fit:cover;
+      object-position:center top;
+      border: 3px solid #333;
+    }
+     .box{
+          width:1000px;
+          padding:10px;
+          border:2px solid #0a192f;
+          border-radius:15px;
+          margin:80 px auto;
+     }
+  
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #fefefe; color: #333; line-height: 1.6; transition: 0.3s; }
+    header { background: #0a192f; color: #fff; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 40px; margin-bottom: 10px; }
+    header p { font-size: 18px;color:blueviolet}
+    nav { margin-top: 20px; }
+    nav a { color: #64ffda; text-decoration: none; margin: 0 15px; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #ffffff; }
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    h2 { font-size: 32px; color: #315a97; margin-bottom: 30px; text-align: center; }
+    p, li { font-size: 16px; margin-bottom: 10px; }
+    ul { list-style: none; padding: 0; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .project-card { background:#ccc; border-radius: 10px; box-shadow: 0 4px 20px rgba(66, 154, 82, 0.08); overflow: hidden; transition: transform 0.3s; }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { width: 100%; height: 200px; object-fit: cover; }
+    .project-card div { padding: 20px; }
+    .project-card h3 { margin-bottom: 10px; font-size: 20px; color:antiquewhite; }
+    .project-card p { font-size: 14px; color:#315a97; }
+    .contact, .skills { text-align: center; }
+    .contact a, .btn { display: inline-block; margin: 12px; text-decoration: none; color: #fff; background: #0a192f; padding: 12px 20px; border-radius: 5px; transition: background 0.3s; }
+    .contact a:hover, .btn:hover { background: #64ffda; color: #0a192f; }
+    form { max-width: 600px; margin: 20px auto; display: flex; flex-direction: column; gap: 15px; }
+    input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #64ffda; color: #0a192f; padding: 12px; border: none; border-radius: 5px; font-weight: 600; cursor: pointer; }
+    footer { text-align: center; padding: 30px; background: #0a192f; color: #fff; margin-top: 50px; }
+    .dark-mode { background: #0a192f; color: #fefefe; }
+    .dark-mode header, .dark-mode footer { background: #111; }
+    .dark-mode nav a, .dark-mode .contact a, .dark-mode .btn { color: #64ffda; }
+    .dark-mode section { background: #0a192f; }
+    .dark-mode .project-card { background: #132235; color: #fff; }
+  </style>
+</head>
+     <header>
+      <img src="images.jpeg" alt="my protofolio photo" class="profile-photo">
+
+  <h1>Dandika Joshna</h1>
+  <p>Web Developer ,front-end developer, Creator</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button onclick="toggleDarkMode()" style="margin-top: 20px; background: #64ffda; color: #0a192f; padding: 10px 20px; border: none; border-radius: 5px; font-weight: 600;">Toggle Dark Mode</button>
+    </header>
+
+
+<section id="about">
+  <div class="box">
+  <h2>About Me</h2>
+  <p style="text-align: center; max-width: 700px; margin: auto;">Hi! I'm <strong>Dandika Joshna</strong>, a passionate web developer with a knack for creating elegant and functional web experiences. I thrive on solving problems with code and love bringing ideas to life through beautiful design.</p>
+  </div>
+  </section>
+
+<section id="education">
+  <div class="box">
+  <h2>Education</h2>
+  <ul style="max-width: 800px; margin:auto;">
+    <li><strong>Bachelor of Computer Science</strong><br> Sri sivani college of engeneering,Andhra pradesh 2023-2027<br>currently purshing an B.tech in computer science with jntu gv</li><button>cgpa 8.3</button>
+    <li><strong>higher Secondary Education</strong><br>Terisian pre university college ,karnataka 2021 - 2023<br>physics,chemisty,mathematics,bioloy [PCMB]</li><button>cgpa:9.0</button>
+    <li><strong>high school</strong><br>Bhagya jyothi high school,karnataka, 2016 - 2019<br>general education with an strong foundation in all subjcts</li><button>cgpa:8.9</button>
+  </ul>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="box">
+  <h2>Certificates</h2>
+  <ul style="max-width: 700px; margin: auto;">
+    <li><strong>Front-End Web Development</strong> - aajhub</li>
+    <li><strong>data structures and algorithm</strong> - universidad carlos||| de madrid</li>
+    <li><strong>artificial intelligence</strong> - elewayte</li>
+    <li><strong>introduction to responsible AI</strong> -simplilearn</li>
+  </ul>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <div class="box">
+  <h2>Skills</h2>
+  <ul style="max-width: 700px; margin: auto;">
+    <li>HTML, CSS, JavaScript</li>
+    <li>c, Python,java</li>
+    <li>Responsive Design,few games developing</li>
+  </ul>
+  </div>
+</section>
+
+<section id="languages">
+  <div class="box">
+  <h2>languages known</h2>
+  <ul style="max-width: 700px; margin: auto;">
+    <li> * English</li>
+    <li> * Hindi</li>
+    <li> * kannada</li>
+    <li> * Telugu</li>
+    <li> * Urdu</li>
+  </ul>
+</div>
+</section>
+
+
+
+<section id="projects">
+  <div class="box">
+  <h2>My Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <div><h3>Project One</h3><p>A clean portfolio site using HTML, CSS, and JavaScript.</p></div>
+    </div>
+    <div class="project-card">
+      <div><h3>Project Two</h3><p>An tic tac toe game</p></div>
+    </div>
+    <div class="project-card">
+      <div><h3>Project Three</h3><p>calculator with tkinter.</p></div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <a href="mailto:dandikajoshna25@gmail.com"> Email Me</a>
+  <a href="https://www.linkedin.com/in/dandika-joshna-a90596323">LinkedIn</a>
+  
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 dandikajoshna. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+</body>
+</html>
